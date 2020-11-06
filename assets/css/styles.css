@@ -1,0 +1,17 @@
+/*Couleur fond*/
+.main-title-bg {
+  font-family: 'Oswald', sans-serif;
+}
+
+.nav-bg {
+  background-color: #23264B;
+}
+
+.nav-bg a:hover {
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #E6BFD1;
+}
+
+.main-title-bg {
+  background-color: #E6BFD1;
+}

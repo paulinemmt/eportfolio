@@ -1,0 +1,10 @@
+.nav-bg{
+    background-color: $primary-color;
+    a:hover{
+        font-weight: bold;
+        text-shadow: 2px 2px 2px $secondary-color;
+    }
+}
+.main-title-bg{
+    background-color: $secondary-color;
+}
