@@ -1,0 +1,68 @@
+.contact-bg, .competence-bg{
+    background-color: $primary-color;
+}
+.langage-list{
+    list-style-type: none;
+}
+
+.project-image{
+    border: 0.2rem solid $primary-color;
+    // height: 35rem;
+    
+}
+.profil-text{
+    border-left: 0.2rem solid $primary-color;
+}
+.project-skill-box{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+// Carousel 
+.carousel{
+    position: relative;
+    overflow: hidden //hide element oustide the view
+}
+.carousel__container{
+    transition: transform 0.3s;
+    transform: translate3d(0,0,0);
+}
+//Height of the element for the container
+.carousel__container::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.carousel__item{
+    float:left;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.carousel-box{
+    box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+}
+.carousel__next, .carousel__prev{
+    position: absolute;
+    width:2.5rem;
+    height:2.5rem;
+    background: $secondary-color url(../../assets/images/arrow-right.png) center center no-repeat;
+    background-size: 2rem 2rem;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -1.25rem;
+    right: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+}
+
+.carousel__next:hover, .carousel__prev:hover{
+    transform:scale(1.2);
+}
+.carousel__prev{
+    background-image: url(../../assets/images/arrow-left.png);
+    background-size: 2rem 2rem;
+    right: auto;
+    left: 1rem;
+}

@@ -1,17 +1,219 @@
 /*Couleur fond*/
 .main-title-bg {
   font-family: 'Oswald', sans-serif;
+  color: #23264B;
 }
 
-.nav-bg {
-  background-color: #23264B;
+.nav-bg a {
+  color: #23264B;
+  border: 0.1rem solid #E6BFD1;
+  transition: transform 500ms, border 500ms, text-shadow 500ms;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-shadow: 0.2rem 0.2rem 0.8rem #E6BFD1;
 }
 
 .nav-bg a:hover {
-  font-weight: bold;
-  text-shadow: 2px 2px 2px #E6BFD1;
+  color: #23264B;
+  transform: scale(1.2);
+  text-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+}
+
+.cv-link {
+  color: #23264B;
+  padding-left: 1rem;
+  border: 0.1rem solid #E6BFD1;
+  box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+  padding: 0.8rem;
+  transition: background-color 1000ms, padding 1000ms, border-radius 1000ms;
+}
+
+.cv-link:hover {
+  padding: 0.8rem;
+  color: #23264B;
+  background-color: #E6BFD1;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.contact-logo a {
+  color: #fff;
+  font-size: 5rem;
+}
+
+.contact-logo a:hover {
+  color: #E6BFD1;
+}
+
+.subtitle-main {
+  font-size: 1.5rem;
+  margin: 2rem 4rem 2rem 0rem;
+}
+
+.competence-bg, .contact-bg {
+  color: #fff;
+}
+
+.email-icon {
+  color: #E6BFD1;
+  font-size: 9rem;
+}
+
+.logo-langage {
+  font-size: 5rem;
+}
+
+.logo-langage.html {
+  color: #DE4B25;
+}
+
+.logo-langage.css {
+  color: #3595CE;
+}
+
+.logo-langage.javascript {
+  color: #EFD81D;
+}
+
+.logo-langage.sass {
+  color: #CF649A;
+}
+
+.logo-langage.bootstrap {
+  color: #7952B3;
+}
+
+.logo-langage.git {
+  color: #3F2E00;
+}
+
+.logo-langage.github {
+  color: #24292E;
+}
+
+.logo-langage.vuejs {
+  color: #3FB27F;
+}
+
+.logo-langage.nodejs {
+  color: #78B162;
+}
+
+.logo-langage.npm {
+  color: #CB3837;
+}
+
+.skill-name {
+  color: #23264B;
+}
+
+.logo-project {
+  font-size: 2rem;
+  color: #E6BFD1;
+  transition: 1000ms font-size;
+}
+
+.logo-project:hover {
+  font-size: 3rem;
+}
+
+.logo-project-skill {
+  color: #E6BFD1;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo-localisation {
+  font-size: 1.5rem;
+  color: #E6BFD1;
+}
+
+.contact-bg, .competence-bg {
+  background-color: #23264B;
+}
+
+.langage-list {
+  list-style-type: none;
+}
+
+.project-image {
+  border: 0.2rem solid #23264B;
+}
+
+.profil-text {
+  border-left: 0.2rem solid #23264B;
+}
+
+.project-skill-box {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__container {
+  transition: transform 0.3s;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel__container::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.carousel__item {
+  float: left;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.carousel-box {
+  box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+}
+
+.carousel__next, .carousel__prev {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #E6BFD1 url(../../assets/images/arrow-right.png) center center no-repeat;
+  background-size: 2rem 2rem;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -1.25rem;
+  right: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+}
+
+.carousel__next:hover, .carousel__prev:hover {
+  transform: scale(1.2);
+}
+
+.carousel__prev {
+  background-image: url(../../assets/images/arrow-left.png);
+  background-size: 2rem 2rem;
+  right: auto;
+  left: 1rem;
+}
+
+.nav-bg {
+  background-color: #E6BFD1;
 }
 
 .main-title-bg {
   background-color: #E6BFD1;
+}
+
+.profil-picture {
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
 }

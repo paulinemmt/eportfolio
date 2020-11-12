@@ -1,3 +1,117 @@
 .main-title-bg{
     font-family:'Oswald', sans-serif;
+    color: $primary-color;
+}
+.nav-bg a{
+    color: $primary-color;
+    // border-bottom: 0.1rem solid $secondary-color;
+    border: 0.1rem solid $secondary-color;
+    transition : transform 500ms, border 500ms, text-shadow 500ms;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-shadow: 0.2rem 0.2rem 0.8rem $secondary-color;
+    &:hover{
+        color: $primary-color;
+        transform: scale(1.2); 
+        // border-bottom: 0.1rem solid $primary-color;
+        // border: 0.1rem solid $primary-color;
+        // border-radius: 30% 30%;
+        text-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+    }
+}
+.cv-link{
+    color: $primary-color;
+    padding-left: 1rem;
+    border : 0.1rem solid $secondary-color;
+    box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+    padding: 0.8rem;
+    transition: background-color 1000ms, padding 1000ms, border-radius 1000ms;
+    &:hover{
+        padding: 0.8rem;
+        color: $primary-color;
+        background-color: $secondary-color;
+        border-radius: 50%;
+        text-decoration: none;
+    }
+}
+.contact-logo{
+    a{
+        color:#fff;
+        font-size: 5rem;
+        &:hover{
+            color:$secondary-color;
+        }
+    }
+}
+.subtitle-main{
+    font-size: 1.5rem;
+    margin: 2rem 4rem 2rem 0rem;
+}
+.competence-bg, .contact-bg{
+    color: #fff;
+}
+.email-icon{
+    color: $secondary-color;
+    font-size: 9rem;
+}
+.logo-langage{
+    font-size:5rem;
+    &.html{
+        color: #DE4B25;
+    }
+    &.css{
+        color: #3595CE;
+    }
+    &.javascript{
+        color: #EFD81D;
+    }
+    &.sass{
+        color: #CF649A;
+    }
+    &.bootstrap{
+        color: #7952B3;
+    }
+    &.git{
+        color:#3F2E00;
+    }
+    &.github{
+        color: #24292E;
+    }
+    &.vuejs{
+        color: #3FB27F;
+    }
+    &.nodejs{
+        color:#78B162;
+    }
+    &.npm{
+        color: #CB3837;
+    }
+}
+.skill-name{
+    color:$primary-color;
+}
+
+.logo-project{
+    font-size: 2rem;
+    color: $secondary-color;
+    transition: 1000ms font-size;
+    &:hover{
+        font-size: 3rem;
+    }
+}
+
+.logo-project-skill{
+    color: $secondary-color;
+}
+
+.project-title{
+    // font-family:'Oswald', sans-serif;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.logo-localisation{
+    font-size: 1.5rem;
+    color: $secondary-color;
 }

@@ -2,8 +2,12 @@
 <html>
 
 <head>
-    <title>Pauline Momot - Développeuse web</title>
+    <!-- Title, description & responsive tags -->
+    <title>Pauline Momot - Développeuse web junior</title>
+    <meta name="description"
+        content="Pauline Momot, développeuse web junior à la recherche d'un emploi dès maintenant !">
     <meta name="viewport" content="width=device-width">
+    <!-- Style tags -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -11,50 +15,314 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
+    <!-- JS script -->
+    <script type="text/javascript" src='./js/carousel.js' async></script>
 </head>
 
 <body>
-    <header class="container">
-        <div class="row nav-bg ">
-            <nav class="navbar sticky-top navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+
+    <header class="container-fluid p-0">
+        <div class="row">
+            <nav class="navbar fixed-bottom navbar-expand nav-bg">
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link text-white active" href="#profil">Profil</a>
-                        <a class="nav-item nav-link text-white" href="#competence">Compétences</a>
-                        <a class="nav-item nav-link text-white" href="#realisations">Réalisations</a>
-                        <a class="nav-item nav-link text-white" href="#contact">Contact</a>
-                    </div>
+                </button> -->
+                <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
+                <div class="navbar-nav w-100 d-flex justify-content-around">
+                    <a class="nav-item nav-link active my-2" href="#profil">Profil</a>
+                    <a class="nav-item nav-link my-2" href="#competences">Compétences</a>
+                    <a class="nav-item nav-link my-2" href="#realisations">Réalisations</a>
+                    <a class="nav-item nav-link my-2" href="#contact">Contact</a>
                 </div>
+                <!-- </div> -->
             </nav>
         </div>
-        <div class="row d-flex flex-row p-3 main-title-bg">
-            <img src="./assets/images/pauline.png" alt="Photographie de Pauline Momot">
-            <h1 class="pl-4">Hi,<br />I'm Pauline,<br /> Web developper junior</h1>
+        <div class="row d-flex flex-row py-5 mx-auto main-title-bg">
+            <div class="col-sm-12 col-md-3 text-center">
+                <img src="./assets/images/pauline.png" class="profil-picture" alt="Photographie de Pauline Momot">
+            </div>
+            <h1 class="col-sm-12 col-md-9 pl-4 mx-auto">Hi,<br />I'm Pauline,<br /> Web developper junior</h1>
         </div>
     </header>
-    <main class="container">
-        <section id="profil">
-            <h2>Profil</h2>
-            <p>Après quelques années dans l'environnement, je me suis lancée dans un nouveau domaine : le développement
-                web et plus particulièrement le front end.
-                Aujourd'hui diplômée développeuse web junior, je sais créer des sites web responsive dans le respect des
-                normes (W3C) et des standards (WCAG, RGPD). Je sais coder à partir des langages HTML5, CSS3, JavaScript
-                et utiliser les frameworks Vue.js et Bootstrap. J'ai également des compétences back end : création d'API
-                sécurisé et manipulation de base de donnée (MongoDB Atlas, MySQL).
-                Persévérante, rigoureuse et créative, je souhaite mettre mes compétences à profit d'une entreprise en
-                intégrant son équipe.
-                Actuellement à la recherche d'un emploi, n'hésitez pas à me contacter via LinkedIn ou directement sur
-                mon adresse mail </p>
+
+    <main class="container-fluid p-0">
+
+        <!-- PROFIL -->
+        <section id="profil" class="row my-4 mx-auto">
+            <div class="row d-flex flex-column align-items-center justify-content-center mx-auto mb-3">
+                <aside class="my-4 text-center d-md-flex align-items-around">
+                    <p class="mr-4 pt-1 font-weight-bold">26 ans</p>
+                    <p class="ml-4 font-weight-bold"><i class="fas fa-map-marker-alt logo-localisation"></i> Bas-Rhin
+                        (67)</p>
+                    <p class="mr-4 pt-1 font-weight-bold"><a href="assets/images/pauline_momot_cv.pdf"
+                            target="blank" class="ml-4 font-weight-bold cv-link">Mon CV</a></p>
+                </aside>
+                <h2 class="w-75 font-italic mb-4 subtitle-main">A propos...</h2>
+                <p class="w-75 pl-3 profil-text">Aujourd'hui diplômée Développeuse web, j'ai développée une passion pour
+                    ce domaine et plus particulièrement le front end.
+                    Persévérante, rigoureuse et créative, je souhaite mettre mes compétences à profit d'une
+                    entreprise
+                    en
+                    intégrant son équipe.
+                    Actuellement à la recherche d'un emploi, n'hésitez pas à me contacter via LinkedIn ou
+                    directement
+                    sur
+                    mon adresse mail. </p>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="competences" class="row m-0 p-4 d-flex flex-column competence-bg">
+            <h2 class="w-75 font-italic pl-5 pb-3 subtitle-main">Ce que je maîtrise...</h2>
+            <div id="langage-competence">
+                <!-- JS skill -->
+            </div>
+
+        </section>
+
+        <!-- PROJECT -->
+        <section id="realisations" class="">
+
+            <h2 class="w-75 ml-5 pl-3 mt-5 mb-3 font-italic subtitle-main">Mes projets déjà réalisés...</h2>
+
+            <div id="carousel1" class="total-carousel mb-4">
+
+                <!-- PROJECT 1 -->
+                <div class="w-75 d-flex flex-column carousel-box">
+                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Transformation d'un CV en site web
+                    </h3>
+                    <div class="w-100 text-center project-image">
+                        <img class="w-100" src="assets/images/projet2.png">
+                    </div>
+                    <div class="w-100 contact-bg ">
+
+                        <div class="row m-0 project-skill-box">
+                            <div class="col-md-2 d-flex flex-column justify-content-center p-0">
+                                <a href="https://paulinemmt.github.io/P2-cvweb/" class="text-center mb-2" target="blank" ><i
+                                        class="fas fa-laptop logo-project website"></i></a>
+                                <a href="https://github.com/paulinemmt/P2-cvweb" class="text-center mt-2" target="blank" ><i
+                                        class="fab fa-github logo-project github"></i></a>
+                            </div>
+                            <p class="col-md-10 px-2 my-auto text-skill-project"><i
+                                    class="fas fa-caret-right logo-project-skill"></i> Intégration
+                                de contenu graphique et textuel conformément à une
+                                maquette avec
+                                HTML et
+                                CSS.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Implémentation d'une interface
+                                responsive en CSS.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Utilisation d'un système de
+                                gestion de version (git) et son hébergement (Github).<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Respect de la conformité HTML et
+                                CSS aux normes du W3C.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PROJECT 2 -->
+                <div class="d-flex flex-column align-items-center  w-75 carousel-box">
+                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Dynamiser une page web avec des
+                        animations CSS</h3>
+                    <div class="w-100 text-center project-image">
+                        <img class="w-100 " src="assets/images/projet3.png">
+                    </div>
+                    <div class="w-100 contact-bg ">
+
+                        <div class="row m-0 project-skill-box">
+                            <div class="col-md-2 d-flex flex-column justify-content-center p-0">
+                                <a href="https://paulinemmt.github.io/P3-ohmyfood/" class="text-center mb-2" target="blank" ><i
+                                    class="fas fa-laptop logo-project website"></i></a>
+                                <a href="https://github.com/paulinemmt/P3-ohmyfood" class="text-center mt-2" target="blank"><i
+                                        class="fab fa-github logo-project github"></i></a>
+                            </div>
+                            <p class="col-md-10 px-2 my-auto text-skill-project"><i
+                                    class="fas fa-caret-right logo-project-skill"></i> Mise en place
+                                d'effets CSS graphiques avancés sur une page web à partir d'une maquette.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Mise en place d'une structure de
+                                navigation.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Utilisation de Sass.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Respect de la conformité HTML et
+                                CSS
+                                aux normes du W3C.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PROJECT 3 -->
+                <div class=" d-flex flex-column align-items-center  w-75 carousel-box">
+                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Optimiser un site web existant</h3>
+                    <div class="w-100 text-center project-image">
+                        <img class="w-100" src="assets/images/projet4.png">
+                    </div>
+                    <div class="w-100 contact-bg ">
+
+                        <div class="row m-0 project-skill-box">
+                            <div class="col-md-2 d-flex flex-column justify-content-center p-0">
+                                <a href="https://paulinemmt.github.io/lachouetteagence-webdesignlyon/"
+                                    class="text-center mb-2" target="blank" ><i class="fas fa-laptop logo-project website"></i></a>
+                                <a href="https://github.com/paulinemmt/lachouetteagence-webdesignlyon"
+                                    class="text-center mt-2" target="blank" ><i class="fab fa-github logo-project github"></i></a>
+                            </div>
+                            <p class="col-md-10 px-2 my-auto"><i class="fas fa-caret-right logo-project-skill"></i>
+                                Production de
+                                code HTML et CSS maintenable.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Optimisation de l'accessibilité
+                                (standard WCAG) d'un site web.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Optimisation de la vitesse et de
+                                la
+                                taille d'un site web.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Optimisation du référencement
+                                (SEO)
+                                d'un site web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PROJECT 4 -->
+                <div class=" d-flex flex-column align-items-center w-75 carousel-box">
+                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Construire un site e-commerce</h3>
+                    <div class="w-100 text-center project-image">
+                        <img class="w-100" src="assets/images/projet5.png">
+                    </div>
+                    <div class="w-100 contact-bg ">
+
+                        <div class="row m-0 project-skill-box">
+                            <div class="col-md-2 d-flex flex-column justify-content-center p-0">
+                                <a href="https://github.com/paulinemmt/orinoco" class="text-center" target="blank" ><i
+                                        class="fab fa-github logo-project github"></i></a>
+                            </div>
+                            <p class="col-md-10 px-2 my-auto"><i class="fas fa-caret-right logo-project-skill"></i>
+                                Gestion
+                                d'évènements JavaScript.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Création d'un plan de test pour
+                                une
+                                application.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Intéraction avec un web service
+                                avec
+                                JavaScript.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Validation de données de source
+                                externe sur un site web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PROJECT 5 -->
+                <div class=" d-flex flex-column align-items-center  w-75 carousel-box">
+                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Construire une API sécurisée</h3>
+                    <div class="w-100 text-center project-image">
+                        <img class="w-100" src="assets/images/projet6.png">
+                    </div>
+                    <div class="w-100 contact-bg ">
+
+                        <div class="row m-0 project-skill-box">
+                            <div class="col-md-2 d-flex flex-column justify-content-center p-0">
+                                <a href="https://github.com/paulinemmt/sopekocko" class="text-center" target="blank" ><i
+                                        class="fab fa-github logo-project github"></i></a>
+                            </div>
+                            <p class="col-md-10 px-2 my-auto"><i class="fas fa-caret-right logo-project-skill"></i>
+                                Implémentation
+                                d'un modèle logique conformément à la réglementation (RGPD, OWASP).<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Stockage de données de manière
+                                sécurisée pour une application web (MongoDB Atlas, Mongoose).<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Mise en oeuvre d'opérations CRUD
+                                de
+                                manière sécurisée (Postman).<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Mise en place d'un serveur node.js
+                                et
+                                utilisation du framework express.js.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PROJECT 6 -->
+                <div class="d-flex flex-column align-items-center  w-75 carousel-box">
+                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Créer un réseau social d'entreprise
+                    </h3>
+                    <div class="w-100 text-center project-image">
+                        <img class="w-100" src="assets/images/projet7.png">
+                    </div>
+                    <div class="w-100 contact-bg">
+
+                        <div class="row m-0 project-skill-box">
+                            <div class="col-md-2 d-flex flex-column justify-content-center p-0">
+                                <a href="https://github.com/paulinemmt/groupomaniav2" class="text-center" target="blank" ><i
+                                        class="fab fa-github logo-project github"></i></a>
+                            </div>
+                            <p class="col-md-10 px-2 my-auto"><i class="fas fa-caret-right logo-project-skill"></i>
+                                Authentification
+                                et maintient de la session d'un utilisateur.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Gestion et stockage de données de
+                                manière sécurisée avec SQL.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Personnalisation du contenu envoyé
+                                à
+                                un client web.<br />
+                                <i class="fas fa-caret-right logo-project-skill"></i> Développement de la partie
+                                frontend
+                                avec le framework Vue.js.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="row pb-4 mx-auto contact-bg d-flex flex-column">
+            <h2 class="font-italic pl-4 text-center subtitle-main">Pour en savoir plus, contactez-moi !
+            </h2>
+            <!-- <form method="post">
+                <label>Email</label>
+                <input type="email" name="email" required><br>
+                <label>Message</label>
+                <textarea name="message" required></textarea><br>
+                <input type="submit">
+            </form>
+            <?php
+            if (isset($_POST['message'])) {
+                $position_arobase = strpos($_POST['email'], '@');
+                if ($position_arobase === false)
+                    echo '<p>Votre email doit comporter un arobase.</p>';
+                else {
+                    $retour = mail('pauline.momot@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
+                    if($retour)
+                        echo '<p>Votre message a été envoyé.</p>';
+                    else
+                        echo '<p>Erreur.</p>';
+                }
+            }
+            ?> -->
+            <div class=" mx-0 mb-2 pb-5 d-flex flex-row justify-content-around contact-logo">
+                <a href="mailto:pauline.momot@gmail.com" ><i class="fas fa-envelope-square"></i></a>
+                <a href="https://www.linkedin.com/in/pauline-momot/" target="blank" ><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/paulinemmt" target="blank" ><i class="fab fa-github-square"></i></a>
+            </div>
+            <!-- Faire un formulaire pour envoit direct sur l'adresse mail -->
         </section>
 
     </main>
     <footer>
 
     </footer>
+
+    <!-- JS script -->
+    <script type="text/javascript" src='./js/index.js'></script>
+
+
 </body>
 
 </html>
