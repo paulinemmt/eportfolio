@@ -1,81 +1,85 @@
 
 // Competence array
-let competenceLogoClass = [
-    "fa-html5",
-    "fa-css3-alt",
-    "fa-sass",
-    "fa-bootstrap",
-    "fa-js",
-    "fa-vuejs",
-    "fa-node",
-    "fa-npm",
-    "fa-git",
-    "fa-github"
-]
-let competenceLogoClassColor = [
-    "html",
-    "css",
-    "sass",
-    "bootstrap",
-    "javascript",
-    "vuejs",
-    "nodejs",
-    "npm",
-    "git",
-    "github"
-]
-let skillName = [
-    "HTML5",
-    "CSS3",
-    "Sass",
-    "Bootstrap",
-    "JavaScript",
-    "Vue.js",
-    "node.js",
-    "npm",
-    "git",
-    "Github"
-]
-let competenceImage = [
+// let competenceLogoClassFrontend = [
+//     "fa-html5",
+//     "fa-css3-alt",
+//     "fa-sass",
+//     "fa-bootstrap",
+//     "fa-js",
+//     "fa-vuejs",
+// ]
+// let competenceLogoClassBackend = [
+//     "fa-node",
+// ]
+// let competenceLogoClassTools = [
+//     "fa-npm",
+//     "fa-git",
+//     "fa-github"
+// ]
 
-]
-let arraySkill = []
-let levelSkills = []
+// let competenceLogoClassColor = [
+//     "html",
+//     "css",
+//     "sass",
+//     "bootstrap",
+//     "javascript",
+//     "vuejs",
+//     "nodejs",
+//     "npm",
+//     "git",
+//     "github"
+// ]
+// let skillName = [
+//     "HTML5",
+//     "CSS3",
+//     "Sass",
+//     "Bootstrap",
+//     "JavaScript",
+//     "Vue.js",
+//     "node.js",
+//     "npm",
+//     "git",
+//     "Github"
+// ]
+// let competenceImage = [
+
+// ]
+// let arraySkill = []
+// let levelSkills = []
 
 
-// Skills logo
+// // Skills logo
 
+// const langageCompetence = document.getElementById("langage-competence");
+// langageCompetence.classList.add("card-group", "langage-competence");
+// let divCard = document.createElement("div");
+//     langageCompetence.appendChild(divCard);
+//     divCard.classList.add("row", "row-cols-1", "row-cols-md-2","row-cols-lg-4" );
 
-const langageCompetence = document.getElementById("langage-competence");
-langageCompetence.classList.add("card-group", "langage-competence");
-let divCard = document.createElement("div");
-    langageCompetence.appendChild(divCard);
-    divCard.classList.add("row", "row-cols-1", "row-cols-md-2","row-cols-lg-4" );
+// for (let i = 0; i < competenceLogoClass.length; i++) {
+//     let divCardCard = document.createElement("div");
+//     divCard.appendChild(divCardCard);
+//     divCardCard.classList.add("col-md-4", "col-lg-2");
 
-for (let i = 0; i < competenceLogoClass.length; i++) {
-    let divCardCard = document.createElement("div");
-    divCard.appendChild(divCardCard);
-    divCardCard.classList.add("col-md-4", "col-lg-2");
+//     let card = document.createElement("div");
+//     divCardCard.appendChild(card);
+//     card.classList.add("card", "m-1");
 
-    let card = document.createElement("div");
-    divCardCard.appendChild(card);
-    card.classList.add("card", "m-1");
+//     let cardBody = document.createElement("div");
+//     card.appendChild(cardBody);
+//     cardBody.classList.add("card-body", "text-center");
 
-    let cardBody = document.createElement("div");
-    card.appendChild(cardBody);
-    cardBody.classList.add("card-body", "text-center");
+//     let logoCompetence = document.createElement("i");
+//     cardBody.appendChild(logoCompetence);
+//     logoCompetence.classList.add("fab", competenceLogoClass[i], "logo-langage", competenceLogoClassColor[i], "card-title"); 
+//     arraySkill.push(logoCompetence);
 
-    let logoCompetence = document.createElement("i");
-    cardBody.appendChild(logoCompetence);
-    logoCompetence.classList.add("fab", competenceLogoClass[i], "logo-langage", competenceLogoClassColor[i], "card-title"); 
-    arraySkill.push(logoCompetence);
+//     let nameSkill = document.createElement("div");
+//     cardBody.appendChild(nameSkill);
+//     nameSkill.innerHTML = skillName[i]
+//     nameSkill.classList.add("card-title","skill-name")
 
-    let nameSkill = document.createElement("div");
-    cardBody.appendChild(nameSkill);
-    nameSkill.innerHTML = skillName[i]
-    nameSkill.classList.add("card-title","skill-name")
-
-}
+// }
 
 // //Show Level
 // console.log(arraySkill);

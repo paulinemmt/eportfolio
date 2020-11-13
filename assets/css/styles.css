@@ -6,6 +6,7 @@
 
 .nav-bg a {
   color: #23264B;
+  font-weight: bold;
   border: 0.1rem solid #E6BFD1;
   transition: transform 500ms, border 500ms, text-shadow 500ms;
   padding-bottom: 0;
@@ -54,9 +55,9 @@
   color: #fff;
 }
 
-.email-icon {
+.skill-subtitle {
   color: #E6BFD1;
-  font-size: 9rem;
+  font-weight: lighter;
 }
 
 .logo-langage {
@@ -103,8 +104,32 @@
   color: #CB3837;
 }
 
+.logo-langage.expressjs {
+  max-height: 47px;
+  max-width: 90px;
+}
+
+.logo-langage.mysql {
+  max-height: 47px;
+  max-width: 90px;
+}
+
+.logo-langage.mongodb {
+  max-height: 47px;
+  max-width: 90px;
+}
+
+.logo-langage.postman {
+  max-height: 77px;
+  max-width: 100px;
+}
+
 .skill-name {
   color: #23264B;
+}
+
+.skill-level {
+  color: #E6BFD1;
 }
 
 .logo-project {
@@ -177,6 +202,7 @@
 
 .carousel-box {
   box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+  width: 90%;
 }
 
 .carousel__next, .carousel__prev {

@@ -18,6 +18,32 @@
     padding-bottom: 1rem;
 }
 
+// @keyframes underline {
+//     from {left: 0px;
+//     width:0%}
+//     to {
+//     width:100%;}
+//   }
+
+// .skill-subtitle{
+//         &::after{
+//             content:"";
+//             width:0%;
+//             height:0.1rem;
+//             background-color:$secondary-color;
+//             position:relative;
+//             left:0rem;
+//             bottom:0rem;
+//             opacity:0.5;
+//             border-radius:4rem;
+//         }
+//         &:hover {
+//             &::after{
+//                animation: underline 700ms forwards;
+//             }   
+//         }    
+//       }
+
 
 // Carousel 
 .carousel{
@@ -41,6 +67,7 @@
 }
 .carousel-box{
     box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+    width:90%;
 }
 .carousel__next, .carousel__prev{
     position: absolute;
