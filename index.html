@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -24,20 +25,21 @@
 <body>
 
     <header class="container-fluid p-0">
+
         <div class="row">
-            <nav class="navbar fixed-bottom navbar-expand nav-bg">
-                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            <nav class="navbar fixed-bottom navbar-expand-lg nav-bg text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
-                <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> -->
-                <div class="navbar-nav w-100 d-flex justify-content-around">
-                    <a class="nav-item nav-link active my-2" href="#profil">Profil</a>
-                    <a class="nav-item nav-link my-2" href="#competences">Compétences</a>
-                    <a class="nav-item nav-link my-2" href="#realisations">Réalisations</a>
-                    <a class="nav-item nav-link my-2" href="#contact">Contact</a>
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav w-100 d-flex justify-content-center text-uppercase">
+                    <li class="nav-item"><a class="nav-link active my-2" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link my-2" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link my-2" href="#realisations">Réalisations</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link my-2" href="#contact">Contact</a></li>
+                </ul>
                 </div>
-                <!-- </div> -->
             </nav>
         </div>
         <div class="row d-flex flex-row py-5 mx-auto main-title-bg">
@@ -52,129 +54,137 @@
 
         <!-- PROFIL -->
         <section id="profil" class="row mx-auto profil-bg">
-            <div class="row d-flex flex-column align-items-center justify-content-center mx-auto mb-3">
-                <aside class="my-4 text-center d-md-flex align-items-around">
-                    <p class="mr-4 pt-1 font-weight-bold">26 ans</p>
-                    <p class="ml-4 font-weight-bold"><i class="fas fa-map-marker-alt logo-localisation"></i> Bas-Rhin
+            <div class="row d-flex flex-column align-items-center justify-content-center mx-auto mb-5">
+                <aside class="my-4 text-center d-md-flex align-items-center">
+                    <p class="m-auto font-weight-bold"><i
+                            class="fas fa-map-marker-alt mr-2 logo-localisation"></i>Bas-Rhin
                         (67)</p>
-                    <p class="mr-4 pt-1 font-weight-bold"><a href="assets/images/pauline_momot_cv.pdf" target="blank"
-                            class="ml-4 font-weight-bold cv-link">Mon CV</a></p>
+                    <p class="m-auto font-weight-bold"><a href="assets/images/pauline_momot_cv.pdf" target="blank"
+                            class="ml-4 font-weight-bold cv-link"><i
+                                class="fas fa-hand-point-right mr-2 logo-cv"></i>Mon CV</a></p>
                 </aside>
-                <h2 class="w-50 font-italic mb-4 subtitle-main">A propos...</h2>
-                <p class="w-50 pl-3 profil-text"> "Aujourd'hui diplômée Développeuse web, j'ai développée une passion
-                    pour
-                    ce domaine et plus particulièrement le front end.
-                    Persévérante, rigoureuse et créative, je souhaite mettre mes compétences à profit d'une
-                    entreprise
-                    en
-                    intégrant son équipe.
-                    Actuellement à la recherche d'un emploi, n'hésitez pas à me contacter via LinkedIn ou
-                    directement
-                    sur
-                    mon adresse mail." </p>
-
+                <div class="w-75 p-3 mt-5 about-bg">
+                    <p class="w-100 pl-2 mb-0 font-italic profil-text">"Aujourd'hui diplômée Développeuse web, j'ai
+                        développée une passion
+                        pour
+                        ce domaine et plus particulièrement le front end.
+                        Persévérante, rigoureuse et créative, je souhaite mettre mes compétences à profit d'une
+                        entreprise
+                        en
+                        intégrant son équipe.
+                        Actuellement à la recherche d'un emploi, n'hésitez pas à me contacter via LinkedIn ou
+                        directement
+                        sur
+                        mon adresse mail." </p>
+                </div>
             </div>
         </section>
 
         <!-- SKILLS -->
         <section id="competences" class="row m-0 p-4 d-flex flex-column text-center competence-bg">
-            <h2 class="w-100 font-italic ml-0 pb-4 subtitle-main">Ce que je maîtrise...</h2>
+            <h2 class="w-100 ml-0 pt-4 pb-5 subtitle-main">Ce que je maîtrise...</h2>
             <div id="langage-competence" class="d-flex flex-row text-center justify-content-around flex-wrap">
 
                 <!-- FRONTEND -->
                 <div class="skill-group">
-                <h3 class="mb-3 skill-subtitle frontend">Développement front-end</h3>
+                    <h3 class="mb-3 skill-subtitle frontend">Développement front-end</h3>
 
-                <div class="w-100 card-group d-flex flex-column align-items-center">
-                    <div class="row">
-                        <div class="col-5 col-md card p-0 m-2">
-                            <i class="fab fa-html5 logo-langage html"></i>
-                            <div class="card-body p-1">
-                                <h5 class="card-title skill-name">HTML5</h5>
-                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
-                                </p>
+                    <div class="w-100 card-group d-flex flex-column align-items-center">
+                        <div class="row">
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-html5 logo-langage html"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">HTML5</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-css3-alt logo-langage css"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">CSS3</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-sass logo-langage sass"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">Sass</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i>
+                                    </p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-5 col-md card p-0 m-2">
-                            <i class="fab fa-css3-alt logo-langage css"></i>
-                            <div class="card-body p-1">
-                                <h5 class="card-title skill-name">CSS3</h5>
-                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
-                                </p>
+                        <div class="row">
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-bootstrap logo-langage bootstrap"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">Bootstrap</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-5 col-md card p-0 m-2">
-                            <i class="fab fa-sass logo-langage sass"></i>
-                            <div class="card-body p-1">
-                                <h5 class="card-title skill-name">Sass</h5>
-                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
-                                </p>
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-js logo-langage javascript"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">JavaScript</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-5 col-md card p-0 m-2">
-                            <i class="fab fa-bootstrap logo-langage bootstrap"></i>
-                            <div class="card-body p-1">
-                                <h5 class="card-title skill-name">Bootstrap</h5>
-                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="col-5 col-md card p-0 m-2">
-                            <i class="fab fa-js logo-langage javascript"></i>
-                            <div class="card-body p-1">
-                                <h5 class="card-title skill-name">JavaScript</h5>
-                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="far fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-5 col-md card p-0 m-2">
-                            <i class="fab fa-vuejs logo-langage vuejs"></i>
-                            <div class="card-body p-1">
-                                <h5 class="card-title skill-name">Vue.js</h5>
-                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="fas fa-circle skill-level"></i><i
-                                        class="far fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
-                                </p>
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-vuejs logo-langage vuejs"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">Vue.js</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
                 <!-- BACKEND -->
                 <div class="skill-group">
-                                    <h3 class="mb-3 skill-subtitle backend">Développement back-end</h3>
+                    <h3 class="mb-3 skill-subtitle backend">Développement back-end</h3>
 
-                
+
                     <div class="row-cols-5 card-group d-flex flex-column align-items-center">
 
                         <div class="row">
@@ -256,10 +266,10 @@
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
 
-                    <!-- TOOLS -->
-                    <div class="skill-group">
+                <!-- TOOLS -->
+                <div class="skill-group">
                     <h3 class="mb-3 skill-subtitle tools">Outils et logiciels</h3>
 
                     <div class="row-cols-5 card-group d-flex flex-column align-items-center">
@@ -312,9 +322,9 @@
         </section>
 
         <!-- PROJECT -->
-        <section id="realisations" class="">
+        <section id="realisations" class="text-center">
 
-            <h2 class="w-75 ml-5 mt-5 mb-3 font-italic subtitle-main">Mes projets déjà réalisés...</h2>
+            <h2 class="w-100 mt-5 mb-3 subtitle-main">Mes projets déjà réalisés...</h2>
 
             <div id="carousel1" class="total-carousel mb-4">
 
@@ -512,8 +522,8 @@
 
         <!-- CONTACT -->
         <section id="contact" class="row pb-1 mx-auto contact-bg d-flex flex-column">
-            <h2 class="font-italic mt-3 mb-1 text-center subtitle-main">Contactez-moi !
-            </h2>
+            <!-- <h2 class="font-italic mt-3 mb-1 text-center subtitle-main">Contactez-moi !
+            </h2> -->
             <!-- <form method="post">
                 <label>Email</label>
                 <input type="email" name="email" required><br>
@@ -535,10 +545,12 @@
                 }
             }
             ?> -->
-            <div class=" mx-0 mb-2 pb-3 d-flex flex-row justify-content-around contact-logo">
-                <a href="mailto:pauline.momot@gmail.com"><i class="fas fa-envelope-square"></i></a>
-                <a href="https://www.linkedin.com/in/pauline-momot/" target="blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/paulinemmt" target="blank"><i class="fab fa-github-square"></i></a>
+            <div class=" mx-0 mb-2 py-2 d-flex flex-row justify-content-center contact-logo">
+                <a href="mailto:pauline.momot@gmail.com" class="mx-2"><i class="fas fa-envelope-square"></i></a>
+                <a href="https://www.linkedin.com/in/pauline-momot/" class="mx-2" target="blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/paulinemmt" class="mx-2" target="blank"><i
+                        class="fab fa-github-square"></i></a>
             </div>
             <!-- Faire un formulaire pour envoit direct sur l'adresse mail -->
         </section>

@@ -13,7 +13,7 @@ main {
   color: #23264B;
   font-weight: bold;
   border: 0.1rem solid #E6BFD1;
-  transition: transform 500ms, border 500ms, text-shadow 500ms;
+  transition: border 500ms, text-shadow 500ms;
   padding-bottom: 0;
   padding-top: 0;
   text-shadow: 0.2rem 0.2rem 0.8rem #E6BFD1;
@@ -21,16 +21,20 @@ main {
 
 .nav-bg a:hover {
   color: #23264B;
-  transform: scale(1.2);
+  text-decoration: underline;
   text-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+}
+
+.navbar-toggler-icon {
+  color: #23264B;
+  border: 1rem solid #fff;
 }
 
 .cv-link {
   color: #fff;
   padding-left: 1rem;
-  box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
   padding: 0.6rem;
-  transition: background-color 1000ms, padding 1000ms;
+  transition: background-color 1000ms, padding 1000ms, color 1000ms;
 }
 
 .cv-link:hover {
@@ -42,7 +46,7 @@ main {
 
 .contact-logo a {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .contact-logo a:hover {
@@ -60,7 +64,10 @@ main {
 
 .skill-subtitle {
   color: #23264B;
+  font-size: 1.2rem;
   font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0.1rem 0.1rem 0.3rem #23264B;
 }
 
 .logo-langage {
@@ -155,7 +162,7 @@ main {
   padding-bottom: 1rem;
 }
 
-.logo-localisation {
+.logo-localisation, .logo-cv {
   font-size: 1.5rem;
   color: #E6BFD1;
 }
@@ -166,6 +173,10 @@ main {
   color: #fff;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+.about-bg {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .contact-bg, .competence-bg {

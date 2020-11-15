@@ -9,28 +9,27 @@ main{
     font-family: 'Roboto', sans-serif;
     color: $primary-color;
     font-weight: bold;
-    // border-bottom: 0.1rem solid $secondary-color;
     border: 0.1rem solid $secondary-color;
-    transition : transform 500ms, border 500ms, text-shadow 500ms;
+    transition : border 500ms, text-shadow 500ms;
     padding-bottom: 0;
     padding-top: 0;
     text-shadow: 0.2rem 0.2rem 0.8rem $secondary-color;
     &:hover{
         color: $primary-color;
-        transform: scale(1.2); 
-        // border-bottom: 0.1rem solid $primary-color;
-        // border: 0.1rem solid $primary-color;
-        // border-radius: 30% 30%;
+        text-decoration: underline;
         text-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
     }
+}
+.navbar-toggler-icon{
+    color: $primary-color;
+    border: 1rem solid #fff;
 }
 .cv-link{
     color: #fff;
     padding-left: 1rem;
-    // border : 0.1rem solid $secondary-color;
-    box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+    // box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
     padding: 0.6rem;
-    transition: background-color 1000ms, padding 1000ms;
+    transition: background-color 1000ms, padding 1000ms, color 1000ms;
     &:hover{
         padding: 0.6rem;
         color: $primary-color;
@@ -41,7 +40,7 @@ main{
 .contact-logo{
     a{
         color:#fff;
-        font-size: 4rem;
+        font-size: 3rem;
         &:hover{
             color:$secondary-color;
         }
@@ -58,7 +57,10 @@ main{
 
 .skill-subtitle{
     color: $primary-color;
+    font-size: 1.2rem;
     font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0.1rem 0.1rem 0.3rem $primary-color;
 }
 .logo-langage{
     font-size:5rem;
@@ -129,13 +131,20 @@ main{
 }
 
 .project-title{
-    // font-family:'Oswald', sans-serif;
     font-size: 1.1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.logo-localisation{
+.logo-localisation, .logo-cv{
     font-size: 1.5rem;
     color: $secondary-color;
 }
+// .logo-cv{
+//     font-size: 1.5rem;
+//     color: $secondary-color;
+//     transition: 1000ms color;
+//     &:hover{
+//         color: $primary-color;
+//     }
+// }
