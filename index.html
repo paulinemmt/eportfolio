@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
@@ -51,7 +51,7 @@
     <main class="container-fluid p-0">
 
         <!-- PROFIL -->
-        <section id="profil" class="row my-4 mx-auto">
+        <section id="profil" class="row mx-auto profil-bg">
             <div class="row d-flex flex-column align-items-center justify-content-center mx-auto mb-3">
                 <aside class="my-4 text-center d-md-flex align-items-around">
                     <p class="mr-4 pt-1 font-weight-bold">26 ans</p>
@@ -60,8 +60,8 @@
                     <p class="mr-4 pt-1 font-weight-bold"><a href="assets/images/pauline_momot_cv.pdf" target="blank"
                             class="ml-4 font-weight-bold cv-link">Mon CV</a></p>
                 </aside>
-                <h2 class="w-75 font-italic mb-4 subtitle-main">A propos...</h2>
-                <p class="w-75 pl-3 profil-text"> "Aujourd'hui diplômée Développeuse web, j'ai développée une passion
+                <h2 class="w-50 font-italic mb-4 subtitle-main">A propos...</h2>
+                <p class="w-50 pl-3 profil-text"> "Aujourd'hui diplômée Développeuse web, j'ai développée une passion
                     pour
                     ce domaine et plus particulièrement le front end.
                     Persévérante, rigoureuse et créative, je souhaite mettre mes compétences à profit d'une
@@ -77,200 +77,244 @@
         </section>
 
         <!-- SKILLS -->
-        <section id="competences" class="row m-0 p-4 d-flex flex-column competence-bg">
-            <h2 class="w-75 font-italic pl-5 pb-3 subtitle-main">Ce que je maîtrise...</h2>
-            <div id="langage-competence" class="text-center">
+        <section id="competences" class="row m-0 p-4 d-flex flex-column text-center competence-bg">
+            <h2 class="w-100 font-italic ml-0 pb-4 subtitle-main">Ce que je maîtrise...</h2>
+            <div id="langage-competence" class="d-flex flex-row text-center justify-content-around flex-wrap">
 
                 <!-- FRONTEND -->
+                <div class="skill-group">
                 <h3 class="mb-3 skill-subtitle frontend">Développement front-end</h3>
 
-                <div class="row-cols-5 card-group">
+                <div class="w-100 card-group d-flex flex-column align-items-center">
+                    <div class="row">
+                        <div class="col-5 col-md card p-0 m-2">
+                            <i class="fab fa-html5 logo-langage html"></i>
+                            <div class="card-body p-1">
+                                <h5 class="card-title skill-name">HTML5</h5>
+                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
+                                </p>
+                            </div>
+                        </div>
 
-                    <div class="col-md-4 col-lg-2 card p-0 mx-1">
-                        <i class="fab fa-html5 logo-langage html"></i>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">HTML5</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
+                        <div class="col-5 col-md card p-0 m-2">
+                            <i class="fab fa-css3-alt logo-langage css"></i>
+                            <div class="card-body p-1">
+                                <h5 class="card-title skill-name">CSS3</h5>
+                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-5 col-md card p-0 m-2">
+                            <i class="fab fa-sass logo-langage sass"></i>
+                            <div class="card-body p-1">
+                                <h5 class="card-title skill-name">Sass</h5>
+                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-5 col-md card p-0 m-2">
+                            <i class="fab fa-bootstrap logo-langage bootstrap"></i>
+                            <div class="card-body p-1">
+                                <h5 class="card-title skill-name">Bootstrap</h5>
+                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
+                                </p>
+                            </div>
+                        </div>
 
-                    <div class="col-md-2 card p-0 mx-1">
-                        <i class="fab fa-css3-alt logo-langage css"></i>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">CSS3</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
+                        <div class="col-5 col-md card p-0 m-2">
+                            <i class="fab fa-js logo-langage javascript"></i>
+                            <div class="card-body p-1">
+                                <h5 class="card-title skill-name">JavaScript</h5>
+                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="far fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-5 col-md card p-0 m-2">
+                            <i class="fab fa-vuejs logo-langage vuejs"></i>
+                            <div class="card-body p-1">
+                                <h5 class="card-title skill-name">Vue.js</h5>
+                                <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="fas fa-circle skill-level"></i><i
+                                        class="far fa-circle skill-level"></i><i class="far fa-circle skill-level"></i>
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-md-2 card p-0 mx-1">
-                        <i class="fab fa-sass logo-langage sass"></i>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">Sass</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 card p-0 mx-1">
-                        <i class="fab fa-bootstrap logo-langage bootstrap"></i>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">Bootstrap</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 card p-0 mx-1">
-                        <i class="fab fa-js logo-langage javascript"></i>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">JavaScript</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 card p-0 mx-1">
-                        <i class="fab fa-vuejs logo-langage vuejs"></i>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">Vue.js</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
-                        </div>
-                    </div>
-
                 </div>
+            </div>
 
 
                 <!-- BACKEND -->
-                <h3 class="mb-3 skill-subtitle Backend mt-4 mb-2">Développement back-end</h3>
+                <div class="skill-group">
+                                    <h3 class="mb-3 skill-subtitle backend">Développement back-end</h3>
 
-                <div class="row-cols-5 card-group justify-content-center">
+                
+                    <div class="row-cols-5 card-group d-flex flex-column align-items-center">
 
-                    <div class="col-md-2 card p-0 mx-1">
-                        <i class="fab fa-node logo-langage nodejs"></i>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">node.js</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i><i class="far fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
+                        <div class="row">
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-node logo-langage nodejs"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">node.js</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i></p>
+                                </div>
+                            </div>
+
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-npm logo-langage npm"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">npm</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i></p>
+                                </div>
+                            </div>
+
+                            <div class="col-5 col-md card p-0 m-2 text-center">
+                                <div class="text-center">
+                                    <img src="assets/images/express.png"
+                                        class="card-img-top w-75 mb-4 mt-4 logo-langage expressjs"
+                                        alt="logo express.js">
+                                </div>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">Express.js</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-5 col-md card p-0 m-2 text-center">
+                                <div class="text-center">
+                                    <img src="assets/images/mysql.png"
+                                        class="card-img-top w-75 mt-4 mb-4 logo-langage mysql" alt="logo mySQL">
+                                </div>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">MySQL</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i></p>
+                                </div>
+                            </div>
+
+                            <div class="col-5 col-md card p-0 m-2 text-center">
+                                <div class="text-center">
+                                    <img src="assets/images/mongodb.png"
+                                        class="card-img-top w-75 my-3 logo-langage mongodb" alt="logo mongoDB Atlas">
+                                </div>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">MongoDB Atlas</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-md-2 card p-0 mx-1">
-                        <i class="fab fa-npm logo-langage npm"></i>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">npm</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
-                        </div>
                     </div>
 
-                    <div class="col-md-2 card p-0 mx-1 text-center">
-                        <div class="text-center">
-                        <img src="assets/images/express.png" class="card-img-top w-75 my-3 logo-langage expressjs" alt="logo express.js">
-                        </div>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">Express.js</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
+                    <!-- TOOLS -->
+                    <div class="skill-group">
+                    <h3 class="mb-3 skill-subtitle tools">Outils et logiciels</h3>
+
+                    <div class="row-cols-5 card-group d-flex flex-column align-items-center">
+                        <div class="row">
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-git logo-langage git"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">git</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i></p>
+                                </div>
+                            </div>
+
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-github logo-langage github"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">Github</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i></p>
+                                </div>
+                            </div>
+
+                            <div class="col-5 col-md card p-0 m-2 text-center">
+                                <div class="text-center">
+                                    <img src="assets/images/postman.jpg"
+                                        class="card-img-top w-75 mt-3 mb-4 logo-langage postman" alt="logo postman">
+                                </div>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">Postman</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-md-2 card p-0 mx-1 text-center">
-                        <div class="text-center">
-                        <img src="assets/images/mysql.png" class="card-img-top w-75 my-3 logo-langage mysql" alt="logo mySQL">
-                        </div>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">MySQL</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i><i class="far fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 card p-0 mx-1 text-center">
-                        <div class="text-center">
-                        <img src="assets/images/mongodb.png" class="card-img-top w-75 my-3 logo-langage mongodb" alt="logo mongoDB Atlas">
-                        </div>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">MongoDB Atlas</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
-                        </div>
-                    </div>
-
                 </div>
-
-                <!-- TOOLS -->
-                <h3 class="mb-3 skill-subtitle Tools mt-4">Outils et logiciels</h3>
-
-                <div class="row-cols-5 card-group justify-content-center">
-
-                    <div class="col-md-2 card p-0 mx-1">
-                        <i class="fab fa-git logo-langage git"></i>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">node.js</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 card p-0 mx-1">
-                        <i class="fab fa-github logo-langage github"></i>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">Github</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 card p-0 mx-1 text-center">
-                        <div class="text-center">
-                        <img src="assets/images/postman.jpg" class="card-img-top w-75 mt-3 mb-2 logo-langage postman" alt="logo postman">
-                        </div>
-                        <div class="card-body p-1">
-                            <h5 class="card-title skill-name">Postman</h5>
-                            <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="fas fa-circle skill-level"></i><i
-                                    class="fas fa-circle skill-level"></i><i class="far fa-circle skill-level"></i><i
-                                    class="far fa-circle skill-level"></i></p>
-                        </div>
-                    </div>
-               
-            </div>
 
         </section>
 
         <!-- PROJECT -->
         <section id="realisations" class="">
 
-            <h2 class="w-75 ml-5 pl-3 mt-5 mb-3 font-italic subtitle-main">Mes projets déjà réalisés...</h2>
+            <h2 class="w-75 ml-5 mt-5 mb-3 font-italic subtitle-main">Mes projets déjà réalisés...</h2>
 
             <div id="carousel1" class="total-carousel mb-4">
 
@@ -281,7 +325,7 @@
                     <div class="w-100 text-center project-image">
                         <img class="w-100" src="assets/images/projet2.png">
                     </div>
-                    <div class="w-100 contact-bg ">
+                    <div class="w-100 project-bg ">
 
                         <div class="row m-0 project-skill-box">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
@@ -310,12 +354,12 @@
 
                 <!-- PROJECT 2 -->
                 <div class="d-flex flex-column align-items-center carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Dynamiser une page web avec des
+                    <h3 class="w-100 text-center mb-0 project-bg project-title">Dynamiser une page web avec des
                         animations CSS</h3>
                     <div class="w-100 text-center project-image">
                         <img class="w-100 " src="assets/images/projet3.png">
                     </div>
-                    <div class="w-100 contact-bg ">
+                    <div class="w-100 project-bg ">
 
                         <div class="row m-0 project-skill-box">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
@@ -341,11 +385,11 @@
 
                 <!-- PROJECT 3 -->
                 <div class=" d-flex flex-column align-items-center carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Optimiser un site web existant</h3>
+                    <h3 class="w-100 text-center mb-0 project-bg project-title">Optimiser un site web existant</h3>
                     <div class="w-100 text-center project-image">
                         <img class="w-100" src="assets/images/projet4.png">
                     </div>
-                    <div class="w-100 contact-bg ">
+                    <div class="w-100 project-bg ">
 
                         <div class="row m-0 project-skill-box">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
@@ -375,11 +419,11 @@
 
                 <!-- PROJECT 4 -->
                 <div class=" d-flex flex-column align-items-center carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Construire un site e-commerce</h3>
+                    <h3 class="w-100 text-center mb-0 project-bg project-title">Construire un site e-commerce</h3>
                     <div class="w-100 text-center project-image">
                         <img class="w-100" src="assets/images/projet5.png">
                     </div>
-                    <div class="w-100 contact-bg ">
+                    <div class="w-100 project-bg ">
 
                         <div class="row m-0 project-skill-box">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
@@ -405,11 +449,11 @@
 
                 <!-- PROJECT 5 -->
                 <div class=" d-flex flex-column align-items-center carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Construire une API sécurisée</h3>
+                    <h3 class="w-100 text-center mb-0 project-bg project-title">Construire une API sécurisée</h3>
                     <div class="w-100 text-center project-image">
                         <img class="w-100" src="assets/images/projet6.png">
                     </div>
-                    <div class="w-100 contact-bg ">
+                    <div class="w-100 project-bg ">
 
                         <div class="row m-0 project-skill-box">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
@@ -435,12 +479,12 @@
 
                 <!-- PROJECT 6 -->
                 <div class="d-flex flex-column align-items-center carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Créer un réseau social d'entreprise
+                    <h3 class="w-100 text-center mb-0 project-bg project-title">Créer un réseau social d'entreprise
                     </h3>
                     <div class="w-100 text-center project-image">
                         <img class="w-100" src="assets/images/projet7.png">
                     </div>
-                    <div class="w-100 contact-bg">
+                    <div class="w-100 project-bg">
 
                         <div class="row m-0 project-skill-box">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
@@ -467,8 +511,8 @@
         </section>
 
         <!-- CONTACT -->
-        <section id="contact" class="row pb-4 mx-auto contact-bg d-flex flex-column">
-            <h2 class="font-italic pl-4 text-center subtitle-main">Pour en savoir plus, contactez-moi !
+        <section id="contact" class="row pb-1 mx-auto contact-bg d-flex flex-column">
+            <h2 class="font-italic mt-3 mb-1 text-center subtitle-main">Contactez-moi !
             </h2>
             <!-- <form method="post">
                 <label>Email</label>
@@ -491,7 +535,7 @@
                 }
             }
             ?> -->
-            <div class=" mx-0 mb-2 pb-5 d-flex flex-row justify-content-around contact-logo">
+            <div class=" mx-0 mb-2 pb-3 d-flex flex-row justify-content-around contact-logo">
                 <a href="mailto:pauline.momot@gmail.com"><i class="fas fa-envelope-square"></i></a>
                 <a href="https://www.linkedin.com/in/pauline-momot/" target="blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/paulinemmt" target="blank"><i class="fab fa-github-square"></i></a>
@@ -500,8 +544,11 @@
         </section>
 
     </main>
-    <footer>
 
+    <footer class="container-fluid p-0 pb-5">
+        <div class="text-center">
+            <p class="pb-3 mb-0 contact-bg"><i class="far fa-copyright"></i> Pauline Momot - 2020</p>
+        </div>
     </footer>
 
     <!-- JS script -->

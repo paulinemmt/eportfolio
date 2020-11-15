@@ -1,10 +1,15 @@
 /*Couleur fond*/
+main {
+  font-family: 'Roboto', sans-serif;
+}
+
 .main-title-bg {
   font-family: 'Oswald', sans-serif;
   color: #23264B;
 }
 
 .nav-bg a {
+  font-family: 'Roboto', sans-serif;
   color: #23264B;
   font-weight: bold;
   border: 0.1rem solid #E6BFD1;
@@ -21,25 +26,23 @@
 }
 
 .cv-link {
-  color: #23264B;
+  color: #fff;
   padding-left: 1rem;
-  border: 0.1rem solid #E6BFD1;
   box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
-  padding: 0.8rem;
-  transition: background-color 1000ms, padding 1000ms, border-radius 1000ms;
+  padding: 0.6rem;
+  transition: background-color 1000ms, padding 1000ms;
 }
 
 .cv-link:hover {
-  padding: 0.8rem;
+  padding: 0.6rem;
   color: #23264B;
   background-color: #E6BFD1;
-  border-radius: 50%;
   text-decoration: none;
 }
 
 .contact-logo a {
   color: #fff;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .contact-logo a:hover {
@@ -48,7 +51,7 @@
 
 .subtitle-main {
   font-size: 1.5rem;
-  margin: 2rem 4rem 2rem 0rem;
+  margin: auto;
 }
 
 .competence-bg, .contact-bg {
@@ -56,8 +59,8 @@
 }
 
 .skill-subtitle {
-  color: #E6BFD1;
-  font-weight: lighter;
+  color: #23264B;
+  font-weight: bold;
 }
 
 .logo-langage {
@@ -134,7 +137,7 @@
 
 .logo-project {
   font-size: 2rem;
-  color: #E6BFD1;
+  color: #23264B;
   transition: 1000ms font-size;
 }
 
@@ -157,20 +160,48 @@
   color: #E6BFD1;
 }
 
+.profil-bg {
+  background-image: url(../images/bg-profil.jpg);
+  background-position: center;
+  color: #fff;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 .contact-bg, .competence-bg {
   background-color: #23264B;
+}
+
+.skill-group {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  border: 0.2rem solid #E6BFD1;
+}
+
+.project-bg {
+  background-color: #fff;
+}
+
+.project-title {
+  border: 0.1rem solid #23264B;
 }
 
 .langage-list {
   list-style-type: none;
 }
 
+.card {
+  border: #fff !important;
+}
+
 .project-image {
-  border: 0.2rem solid #23264B;
+  border-bottom: 0.1rem solid #23264B;
+  border-top: 0.1rem solid #23264B;
 }
 
 .profil-text {
-  border-left: 0.2rem solid #23264B;
+  border-left: 0.2rem solid #E6BFD1;
 }
 
 .project-skill-box {
@@ -202,6 +233,7 @@
 
 .carousel-box {
   box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+  border: 0.1rem solid #23264B;
   width: 90%;
 }
 
