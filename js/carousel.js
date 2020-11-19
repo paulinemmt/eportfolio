@@ -1,5 +1,8 @@
 // Asynchronous script : add eventlistener
+
 console.log('coucou');
+
+
 class Carousel {
 
     // PARAMETER

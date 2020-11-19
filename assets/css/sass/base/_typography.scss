@@ -1,12 +1,12 @@
 main{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, Arial;
 }
 .main-title-bg{
-    font-family:'Oswald', sans-serif;
+    font-family:'Oswald', sans-serif, Arial;
     color: $primary-color;
 }
 .nav-bg a{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, Arial;
     color: $primary-color;
     font-weight: bold;
     border: 0.1rem solid $secondary-color;
@@ -48,8 +48,12 @@ main{
 }
 .subtitle-main{
     font-size: 1.5rem;
-    // margin: 2rem 4rem;
+    font-weight: bold;
     margin: auto;
+}
+.resume-main{
+    font-size: 1rem;
+    font-weight: lighter;
 }
 .competence-bg, .contact-bg{
     color: #fff;
@@ -119,7 +123,7 @@ main{
 }
 .logo-project{
     font-size: 2rem;
-    color: $primary-color;
+    color: $secondary-color;
     transition: 1000ms font-size;
     &:hover{
         font-size: 3rem;
@@ -138,7 +142,7 @@ main{
 
 .logo-localisation, .logo-cv{
     font-size: 1.5rem;
-    color: $secondary-color;
+    color: $primary-color;
 }
 // .logo-cv{
 //     font-size: 1.5rem;

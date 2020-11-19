@@ -2,7 +2,9 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <!-- Title, description & responsive tags -->
+    <link rel="icon" href="assets/images/code.svg">
     <title>Pauline Momot - Développeuse web junior</title>
     <meta name="description"
         content="Pauline Momot, développeuse web junior à la recherche d'un emploi dès maintenant !">
@@ -19,7 +21,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
     <!-- JS script -->
-    <script type="text/javascript" src='./js/carousel.js' async></script>
+    <script type="text/javascript" src='./js/carousel.js'></script>
 </head>
 
 <body>
@@ -36,7 +38,7 @@
                 <ul class="navbar-nav w-100 d-flex justify-content-center text-uppercase">
                     <li class="nav-item"><a class="nav-link active my-2" href="#profil">Profil</a></li>
                     <li class="nav-item"><a class="nav-item nav-link my-2" href="#competences">Compétences</a></li>
-                    <li class="nav-item"><a class="nav-item nav-link my-2" href="#realisations">Réalisations</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link my-2" href="#realisations">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-item nav-link my-2" href="#contact">Contact</a></li>
                 </ul>
                 </div>
@@ -53,7 +55,7 @@
     <main class="container-fluid p-0">
 
         <!-- PROFIL -->
-        <section id="profil" class="row mx-auto profil-bg">
+        <section id="profil" class="row w-100 mx-auto py-5 profil-bg">
             <div class="row d-flex flex-column align-items-center justify-content-center mx-auto mb-5">
                 <aside class="my-4 text-center d-flex align-items-center">
                     <p class="m-auto font-weight-bold"><i
@@ -61,7 +63,7 @@
                         (67)</p>
                     <p class="m-auto font-weight-bold"><a href="assets/images/pauline_momot_cv.pdf" target="blank"
                             class="ml-4 font-weight-bold cv-link"><i
-                                class="fas fa-hand-point-right mr-2 logo-cv"></i>Mon CV</a></p>
+                                class="fas fa-download mr-2 logo-cv"></i>Mon CV</a></p>
                 </aside>
                 <div class="w-75 p-3 mt-5 about-bg">
                     <p class="w-100 pl-2 mb-0 font-italic profil-text">"Aujourd'hui diplômée Développeuse web, j'ai
@@ -81,13 +83,14 @@
         </section>
 
         <!-- SKILLS -->
-        <section id="competences" class="row m-0 p-4 d-flex flex-column competence-bg">
-            <h2 class="w-100 ml-0 pt-4 pb-5 text-center subtitle-main">Ce que je maîtrise...</h2>
+        <section id="competences" class="row m-0 p-4 d-flex flex-column">
+            <h2 class="w-100 ml-0 pt-5 pb-2 text-center subtitle-main">Mes compétences</h2>
+            <h3 class="w-100 ml-0 pt-2 pb-5 text-center resume-main">Un aperçu des langages de programmation et autres technologies que j'ai pu manipulé.</h3>
             <div id="langage-competence" class="d-flex flex-row text-center justify-content-around flex-wrap">
 
                 <!-- FRONTEND -->
                 <div class="skill-group">
-                    <h3 class="mb-3 skill-subtitle frontend">Développement front-end</h3>
+                    <h4 class="mb-3 skill-subtitle frontend">Développement front-end</h4>
 
                     <div class="w-100 card-group d-flex flex-column align-items-center">
                         <div class="row">
@@ -132,8 +135,6 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
                             <div class="col-5 col-md card p-0 m-2">
                                 <i class="fab fa-bootstrap logo-langage bootstrap"></i>
                                 <div class="card-body p-1">
@@ -147,7 +148,22 @@
                                     </p>
                                 </div>
                             </div>
-
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-wordpress logo-langage wordpress"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">Wordpress</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i>
+                                    </p>
+                                </div>
+                            </div>
                             <div class="col-5 col-md card p-0 m-2">
                                 <i class="fab fa-js logo-langage javascript"></i>
                                 <div class="card-body p-1">
@@ -182,7 +198,7 @@
 
                 <!-- BACKEND -->
                 <div class="skill-group">
-                    <h3 class="mb-3 skill-subtitle backend">Développement back-end</h3>
+                    <h4 class="mb-3 skill-subtitle backend">Développement back-end</h4>
 
 
                     <div class="row-cols-5 card-group d-flex flex-column align-items-center">
@@ -201,18 +217,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-5 col-md card p-0 m-2">
-                                <i class="fab fa-npm logo-langage npm"></i>
-                                <div class="card-body p-1">
-                                    <h5 class="card-title skill-name">npm</h5>
-                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
-                                            class="fas fa-circle skill-level"></i><i
-                                            class="fas fa-circle skill-level"></i><i
-                                            class="fas fa-circle skill-level"></i><i
-                                            class="far fa-circle skill-level"></i><i
-                                            class="far fa-circle skill-level"></i></p>
-                                </div>
-                            </div>
+                            
 
                             <div class="col-5 col-md card p-0 m-2 text-center">
                                 <div class="text-center">
@@ -270,7 +275,7 @@
 
                 <!-- TOOLS -->
                 <div class="skill-group">
-                    <h3 class="mb-3 skill-subtitle tools">Outils et logiciels</h3>
+                    <h4 class="mb-3 skill-subtitle tools">Outils et logiciels</h4>
 
                     <div class="row-cols-5 card-group d-flex flex-column align-items-center">
                         <div class="row">
@@ -300,6 +305,10 @@
                                 </div>
                             </div>
 
+                            
+                        </div>
+                        
+                        <div class="row">
                             <div class="col-5 col-md card p-0 m-2 text-center">
                                 <div class="text-center">
                                     <img src="assets/images/postman.jpg"
@@ -307,6 +316,18 @@
                                 </div>
                                 <div class="card-body p-1">
                                     <h5 class="card-title skill-name">Postman</h5>
+                                    <p class="card-text"><i class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="fas fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i><i
+                                            class="far fa-circle skill-level"></i></p>
+                                </div>
+                            </div>
+                            <div class="col-5 col-md card p-0 m-2">
+                                <i class="fab fa-npm logo-langage npm"></i>
+                                <div class="card-body p-1">
+                                    <h5 class="card-title skill-name">npm</h5>
                                     <p class="card-text"><i class="fas fa-circle skill-level"></i><i
                                             class="fas fa-circle skill-level"></i><i
                                             class="fas fa-circle skill-level"></i><i
@@ -324,21 +345,26 @@
         <!-- PROJECT -->
         <section id="realisations" class="">
 
-            <h2 class="w-100 mt-5 mb-3 text-center subtitle-main">Mes projets déjà réalisés...</h2>
+            <h2 class="w-100 ml-0 pt-4 pb-2 text-center subtitle-main">Mon portfolio</h2>
+            <h3 class="w-100 ml-0 pt-2 pb-3 text-center resume-main">Les projets que j'ai mené.</h3>
+          
 
             <div id="carousel1" class="total-carousel mb-4">
 
                 <!-- PROJECT 1 -->
-                <div class="d-flex flex-column carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Transformation d'un CV en site web
-                    </h3>
-                    <div class="w-100 text-center project-image">
+                <div class="d-flex flex-column carousel-box overlay-image">
+                   
+                    <div class="w-100 text-center project-image image">
                         <img class="w-100" src="assets/images/projet2.png">
                     </div>
-                    <div class="w-100 project-bg ">
+                    <div class="normal">
+ <h3 class="w-100 text-center mb-0 contact-bg project-title">Transformation d'un CV en site web
+                    </h3>
+                    </div>
+                    <div class="w-100 project-bg hover">
 
-                        <div class="row m-0 project-skill-box">
-                            <div class="col-md-2 d-flex flex-column justify-content-center p-0">
+                        <div class="row m-0 project-skill-box text">
+                            <div class="col-md-2 d-flex flex-column justify-content-center p-2">
                                 <a href="https://paulinemmt.github.io/P2-cvweb/" class="text-center mb-2"
                                     target="blank"><i class="fas fa-laptop logo-project website"></i></a>
                                 <a href="https://github.com/paulinemmt/P2-cvweb" class="text-center mt-2"
@@ -363,15 +389,19 @@
 
 
                 <!-- PROJECT 2 -->
-                <div class="d-flex flex-column align-items-center carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Dynamiser une page web avec des
-                        animations CSS</h3>
-                    <div class="w-100 text-center project-image">
+                <div class="d-flex flex-column carousel-box overlay-image">
+                    
+                    <div class="w-100 text-center project-image image">
                         <img class="w-100 " src="assets/images/projet3.png">
                     </div>
-                    <div class="w-100 project-bg ">
+                    <div class="normal">
+                        <h3 class="w-100 text-center mb-0 contact-bg project-title">Dynamiser une page web avec des
+                            animations CSS
+                                           </h3>
+                                           </div>
+                    <div class="w-100 project-bg hover">
 
-                        <div class="row m-0 project-skill-box">
+                        <div class="row m-0 project-skill-box text">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
                                 <a href="https://paulinemmt.github.io/P3-ohmyfood/" class="text-center mb-2"
                                     target="blank"><i class="fas fa-laptop logo-project website"></i></a>
@@ -394,14 +424,19 @@
 
 
                 <!-- PROJECT 3 -->
-                <div class=" d-flex flex-column align-items-center carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Optimiser un site web existant</h3>
-                    <div class="w-100 text-center project-image">
+                <div class=" d-flex flex-column carousel-box overlay-image">
+       
+                    <div class="w-100 text-center project-image image">
                         <img class="w-100" src="assets/images/projet4.png">
                     </div>
-                    <div class="w-100 project-bg ">
+                    <div class="normal">
+                        <h3 class="w-100 text-center mb-0 contact-bg project-title">Optimiser un site web existant
+                                           </h3>
+                                           </div>
+        
+                    <div class="w-100 project-bg hover">
 
-                        <div class="row m-0 project-skill-box">
+                        <div class="row m-0 project-skill-box text">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
                                 <a href="https://paulinemmt.github.io/lachouetteagence-webdesignlyon/"
                                     class="text-center mb-2" target="blank"><i
@@ -428,14 +463,18 @@
 
 
                 <!-- PROJECT 4 -->
-                <div class=" d-flex flex-column align-items-center carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Construire un site e-commerce</h3>
-                    <div class="w-100 text-center project-image">
+                <div class=" d-flex flex-column carousel-box overlay-image">
+                    
+                    <div class="w-100 text-center project-image image">
                         <img class="w-100" src="assets/images/projet5.png">
                     </div>
-                    <div class="w-100 project-bg ">
+                    <div class="normal">
+                        <h3 class="w-100 text-center mb-0 contact-bg project-title">Construire un site e-commerce
+                                           </h3>
+                                           </div>
+                    <div class="w-100 project-bg hover">
 
-                        <div class="row m-0 project-skill-box">
+                        <div class="row m-0 project-skill-box text">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
                                 <a href="https://github.com/paulinemmt/orinoco" class="text-center" target="blank"><i
                                         class="fab fa-github logo-project github"></i></a>
@@ -458,14 +497,18 @@
 
 
                 <!-- PROJECT 5 -->
-                <div class=" d-flex flex-column align-items-center carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Construire une API sécurisée</h3>
-                    <div class="w-100 text-center project-image">
+                <div class=" d-flex flex-column carousel-box overlay-image">
+                    
+                    <div class="w-100 text-center project-image image">
                         <img class="w-100" src="assets/images/projet6.png">
                     </div>
-                    <div class="w-100 project-bg ">
+                    <div class="normal">
+                        <h3 class="w-100 text-center mb-0 contact-bg project-title">Construire une API sécurisée
+                                           </h3>
+                                           </div>
+                    <div class="w-100 project-bg hover">
 
-                        <div class="row m-0 project-skill-box">
+                        <div class="row m-0 project-skill-box text">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
                                 <a href="https://github.com/paulinemmt/sopekocko" class="text-center" target="blank"><i
                                         class="fab fa-github logo-project github"></i></a>
@@ -488,15 +531,19 @@
 
 
                 <!-- PROJECT 6 -->
-                <div class="d-flex flex-column align-items-center carousel-box">
-                    <h3 class="w-100 text-center mb-0 contact-bg project-title">Créer un réseau social d'entreprise
-                    </h3>
-                    <div class="w-100 text-center project-image">
+                <div class="d-flex flex-column carousel-box overlay-image">
+                    
+                    
+                    <div class="w-100 text-center project-image image">
                         <img class="w-100" src="assets/images/projet7.png">
                     </div>
-                    <div class="w-100 project-bg">
+                    <div class="normal">
+                        <h3 class="w-100 text-center mb-0 contact-bg project-title">Créer un réseau social d'entreprise
+                                           </h3>
+                                           </div>
+                    <div class="w-100 project-bg hover">
 
-                        <div class="row m-0 project-skill-box">
+                        <div class="row m-0 project-skill-box text">
                             <div class="col-md-2 d-flex flex-column justify-content-center p-0">
                                 <a href="https://github.com/paulinemmt/groupomaniav2" class="text-center"
                                     target="blank"><i class="fab fa-github logo-project github"></i></a>
@@ -564,7 +611,8 @@
     </footer>
 
     <!-- JS script -->
-    <script type="text/javascript" src='./js/index.js'></script>
+   
+    
 
 
 </body>

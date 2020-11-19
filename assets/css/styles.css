@@ -1,15 +1,15 @@
 /*Couleur fond*/
 main {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif, Arial;
 }
 
 .main-title-bg {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif, Arial;
   color: #23264B;
 }
 
 .nav-bg a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif, Arial;
   color: #23264B;
   font-weight: bold;
   border: 0.1rem solid #E6BFD1;
@@ -55,7 +55,13 @@ main {
 
 .subtitle-main {
   font-size: 1.5rem;
+  font-weight: bold;
   margin: auto;
+}
+
+.resume-main {
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
 .competence-bg, .contact-bg {
@@ -144,7 +150,7 @@ main {
 
 .logo-project {
   font-size: 2rem;
-  color: #23264B;
+  color: #E6BFD1;
   transition: 1000ms font-size;
 }
 
@@ -164,11 +170,11 @@ main {
 
 .logo-localisation, .logo-cv {
   font-size: 1.5rem;
-  color: #E6BFD1;
+  color: #23264B;
 }
 
 .profil-bg {
-  background-image: url(../images/bg-profil.jpg);
+  background-image: url(../images/bg-profil.jpeg);
   background-position: center;
   color: #fff;
   background-attachment: fixed;
@@ -183,12 +189,14 @@ main {
   background-color: #23264B;
 }
 
+.navbar {
+  box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+}
+
 .skill-group {
   background-color: #fff;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   margin-bottom: 2rem;
-  border-radius: 1rem;
-  border: 0.2rem solid #E6BFD1;
 }
 
 .project-bg {
@@ -278,6 +286,44 @@ main {
 
 .carousel__prev--hidden, .carousel__next--hidden {
   opacity: 0;
+}
+
+.overlay-image {
+  position: relative;
+}
+
+.overlay-image .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-image .text {
+  color: #fff;
+  line-height: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.overlay-image .hover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: .5s ease;
+}
+
+.overlay-image:hover .hover {
+  opacity: 1;
+}
+
+.overlay-image .hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .nav-bg {

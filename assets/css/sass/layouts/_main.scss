@@ -1,5 +1,5 @@
 .profil-bg{
-    background-image: url(../images/bg-profil.jpg);
+    background-image: url(../images/bg-profil.jpeg);
     background-position: center;
     color: #fff;
     background-attachment:fixed;
@@ -11,12 +11,15 @@
 .contact-bg, .competence-bg{
     background-color: $primary-color;
 }
+.navbar{
+    box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+}
 .skill-group{
     background-color: #fff;
-   padding: 1rem 1.5rem;
+   padding: 1rem 1rem;
    margin-bottom: 2rem;
-   border-radius: 1rem;
-   border: 0.2rem solid $secondary-color;
+//    border-radius: 1rem;
+//    border: 0.2rem solid $primary-color;
 }
 .project-bg{
     background-color: #fff;
@@ -125,3 +128,38 @@ border-top: 0.1rem solid $primary-color;
     opacity: 0;
     
 }
+
+//overlay carousel
+.overlay-image {
+    position: relative;
+    // width: 100%;
+}
+.overlay-image .image{
+    display:block;
+    width: 100%;
+    height: auto
+}
+.overlay-image .text {
+    color: #fff;
+    line-height: 1.5em; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+   }
+   .overlay-image .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.5);
+    transition: .5s ease;
+   }
+   .overlay-image:hover .hover {
+    opacity: 1;
+   }
+   .overlay-image .hover {
+    background-color: rgba(0,0,0,0.7);
+   }
