@@ -1,10 +1,15 @@
-main{
-    font-family: 'Roboto', sans-serif, Arial;
-}
+/*****TYPOGRAPHY*****/
+
+
+/*HEADER*/
+
+/*Main title*/
 .main-title-bg{
     font-family:'Oswald', sans-serif, Arial;
     color: $primary-color;
 }
+
+/*Nav*/
 .nav-bg a{
     font-family: 'Roboto', sans-serif, Arial;
     color: $primary-color;
@@ -24,41 +29,49 @@ main{
     color: $primary-color;
     border: 1rem solid #fff;
 }
-.cv-link{
-    color: #fff;
-    padding-left: 1rem;
-    // box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
-    padding: 0.6rem;
-    transition: background-color 1000ms, padding 1000ms, color 1000ms;
-    &:hover{
-        padding: 0.6rem;
-        color: $primary-color;
-        background-color: $secondary-color;
-        text-decoration: none;
-    }
-}
-.contact-logo{
-    a{
-        color:#fff;
-        font-size: 3rem;
-        &:hover{
-            color:$secondary-color;
-        }
-    }
+
+
+/*MAIN*/
+
+/*General*/
+main{
+    font-family: 'Roboto', sans-serif, Arial;
 }
 .subtitle-main{
     font-size: 1.5rem;
     font-weight: bold;
     margin: auto;
 }
-.resume-main{
-    font-size: 1rem;
-    font-weight: lighter;
-}
+
 .competence-bg, .contact-bg{
     color: #fff;
 }
 
+/*Profil*/
+.cv-link{
+    color: #fff;
+    padding-left: 1rem;
+    // box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+    padding: 0.6rem;
+    transition: text-shadow 1000ms, padding 1000ms, color 1000ms;
+    &:hover{
+        padding: 0.6rem;
+        color: $secondary-color;
+        text-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+        // background-color: $primary-color;
+        text-decoration: none;
+    }
+}
+.resume-main{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.logo-localisation, .logo-cv{
+    font-size: 1.5rem;
+    color: $secondary-color;
+}
+
+/*Skills*/
 .skill-subtitle{
     color: $primary-color;
     font-size: 1.2rem;
@@ -121,6 +134,8 @@ main{
 .skill-level{
     color:$secondary-color;
 }
+
+/*Project*/
 .logo-project{
     font-size: 2rem;
     color: $secondary-color;
@@ -140,15 +155,21 @@ main{
     padding-bottom: 1rem;
 }
 
-.logo-localisation, .logo-cv{
-    font-size: 1.5rem;
-    color: $primary-color;
+/*Contact*/
+.contact-logo{
+    a{
+        color:#fff;
+        font-size: 3rem;
+        &:hover{
+            color:$secondary-color;
+        }
+    }
 }
-// .logo-cv{
-//     font-size: 1.5rem;
-//     color: $secondary-color;
-//     transition: 1000ms color;
-//     &:hover{
-//         color: $primary-color;
-//     }
-// }
+
+
+
+
+
+
+
+

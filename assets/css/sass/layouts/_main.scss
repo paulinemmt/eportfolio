@@ -1,3 +1,8 @@
+/*****MAIN****/
+
+/*GENERAL*/
+
+/*PROFIL*/
 .profil-bg{
     background-image: url(../images/bg-profil.jpeg);
     background-position: center;
@@ -5,27 +10,17 @@
     background-attachment:fixed;
     background-repeat: no-repeat;
 }
-.about-bg{
+.about-bg, .info-bg{
     background-color: rgba(0,0,0,0.5);
 }
-.contact-bg, .competence-bg{
-    background-color: $primary-color;
-}
-.navbar{
-    box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
-}
+
+/*SKILLS*/
 .skill-group{
     background-color: #fff;
-   padding: 1rem 1rem;
-   margin-bottom: 2rem;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
 //    border-radius: 1rem;
 //    border: 0.2rem solid $primary-color;
-}
-.project-bg{
-    background-color: #fff;
-}
-.project-title{
-    border: 0.1rem solid $primary-color;
 }
 .langage-list{
     list-style-type: none;
@@ -34,47 +29,23 @@
     border: #fff!important;
 }
 
- .project-image{
- border-bottom: 0.1rem solid $primary-color;
-border-top: 0.1rem solid $primary-color;
- }
-.profil-text{
-    border-left: 0.2rem solid $secondary-color;
+/*PROJECT*/
+.project-bg{
+    background-color: #fff;
 }
+.project-title{
+    border: 0.1rem solid $primary-color;
+}
+.project-image{
+    border-bottom: 0.1rem solid $primary-color;
+   border-top: 0.1rem solid $primary-color;
+    }
 .project-skill-box{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-
-// @keyframes underline {
-//     from {left: 0px;
-//     width:0%}
-//     to {
-//     width:100%;}
-//   }
-
-// .skill-subtitle{
-//         &::after{
-//             content:"";
-//             width:0%;
-//             height:0.1rem;
-//             background-color:$secondary-color;
-//             position:relative;
-//             left:0rem;
-//             bottom:0rem;
-//             opacity:0.5;
-//             border-radius:4rem;
-//         }
-//         &:hover {
-//             &::after{
-//                animation: underline 700ms forwards;
-//             }   
-//         }    
-//       }
-
-
-// Carousel 
+/*Carousel*/ 
 .carousel{
     position: relative;
     overflow: hidden //hide element oustide the view
@@ -83,7 +54,6 @@ border-top: 0.1rem solid $primary-color;
     transition: transform 0.3s;
     transform: translate3d(0,0,0);
 }
-//Height of the element for the container
 .carousel__container::after{
     content: '';
     clear: both;
@@ -114,7 +84,6 @@ border-top: 0.1rem solid $primary-color;
     box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
     opacity: 1;
 }
-
 .carousel__next:hover, .carousel__prev:hover{
     transform:scale(1.2);
 }
@@ -129,7 +98,7 @@ border-top: 0.1rem solid $primary-color;
     
 }
 
-//overlay carousel
+/*overlay carousel*/
 .overlay-image {
     position: relative;
     // width: 100%;
@@ -148,7 +117,7 @@ border-top: 0.1rem solid $primary-color;
     transform: translate(-50%, -50%);
     width: 100%;
    }
-   .overlay-image .hover {
+.overlay-image .hover {
     position: absolute;
     top: 0;
     height: 100%;
@@ -157,9 +126,50 @@ border-top: 0.1rem solid $primary-color;
     background-color: rgba(0,0,0,0.5);
     transition: .5s ease;
    }
-   .overlay-image:hover .hover {
+.overlay-image:hover .hover {
     opacity: 1;
    }
-   .overlay-image .hover {
+.overlay-image .hover {
     background-color: rgba(0,0,0,0.7);
    }
+
+/*CONTACT*/
+.contact-bg{
+    background-color: $primary-color;
+}
+
+
+
+
+
+
+
+
+
+// @keyframes underline {
+//     from {left: 0px;
+//     width:0%}
+//     to {
+//     width:100%;}
+//   }
+
+// .skill-subtitle{
+//         &::after{
+//             content:"";
+//             width:0%;
+//             height:0.1rem;
+//             background-color:$secondary-color;
+//             position:relative;
+//             left:0rem;
+//             bottom:0rem;
+//             opacity:0.5;
+//             border-radius:4rem;
+//         }
+//         &:hover {
+//             &::after{
+//                animation: underline 700ms forwards;
+//             }   
+//         }    
+//       }
+
+

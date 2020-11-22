@@ -1,10 +1,23 @@
-.nav-bg{
-    background-color: $secondary-color;
-}
-.main-title-bg{
-    background-color: $secondary-color;
-}
+/******HEADER******/
+
+/*PICTURE*/
 .profil-picture{
     border-radius: 50%;
     box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+}
+.profil-text{
+    border-left: 0.2rem solid $secondary-color;
+}
+
+/*TITLE*/
+.main-title-bg{
+    background-color: $secondary-color;
+}
+
+/*NAV*/
+.navbar{
+    box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+}
+.nav-bg{
+    background-color: $secondary-color;
 }

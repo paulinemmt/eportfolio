@@ -1,13 +1,13 @@
 /*Couleur fond*/
-main {
-  font-family: 'Roboto', sans-serif, Arial;
-}
-
+/*****TYPOGRAPHY*****/
+/*HEADER*/
+/*Main title*/
 .main-title-bg {
   font-family: 'Oswald', sans-serif, Arial;
   color: #23264B;
 }
 
+/*Nav*/
 .nav-bg a {
   font-family: 'Roboto', sans-serif, Arial;
   color: #23264B;
@@ -30,27 +30,10 @@ main {
   border: 1rem solid #fff;
 }
 
-.cv-link {
-  color: #fff;
-  padding-left: 1rem;
-  padding: 0.6rem;
-  transition: background-color 1000ms, padding 1000ms, color 1000ms;
-}
-
-.cv-link:hover {
-  padding: 0.6rem;
-  color: #23264B;
-  background-color: #E6BFD1;
-  text-decoration: none;
-}
-
-.contact-logo a {
-  color: #fff;
-  font-size: 3rem;
-}
-
-.contact-logo a:hover {
-  color: #E6BFD1;
+/*MAIN*/
+/*General*/
+main {
+  font-family: 'Roboto', sans-serif, Arial;
 }
 
 .subtitle-main {
@@ -59,15 +42,36 @@ main {
   margin: auto;
 }
 
+.competence-bg, .contact-bg {
+  color: #fff;
+}
+
+/*Profil*/
+.cv-link {
+  color: #fff;
+  padding-left: 1rem;
+  padding: 0.6rem;
+  transition: text-shadow 1000ms, padding 1000ms, color 1000ms;
+}
+
+.cv-link:hover {
+  padding: 0.6rem;
+  color: #E6BFD1;
+  text-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+  text-decoration: none;
+}
+
 .resume-main {
   font-size: 1rem;
   font-weight: lighter;
 }
 
-.competence-bg, .contact-bg {
-  color: #fff;
+.logo-localisation, .logo-cv {
+  font-size: 1.5rem;
+  color: #E6BFD1;
 }
 
+/*Skills*/
 .skill-subtitle {
   color: #23264B;
   font-size: 1.2rem;
@@ -148,6 +152,7 @@ main {
   color: #E6BFD1;
 }
 
+/*Project*/
 .logo-project {
   font-size: 2rem;
   color: #E6BFD1;
@@ -168,11 +173,19 @@ main {
   padding-bottom: 1rem;
 }
 
-.logo-localisation, .logo-cv {
-  font-size: 1.5rem;
-  color: #23264B;
+/*Contact*/
+.contact-logo a {
+  color: #fff;
+  font-size: 3rem;
 }
 
+.contact-logo a:hover {
+  color: #E6BFD1;
+}
+
+/*****MAIN****/
+/*GENERAL*/
+/*PROFIL*/
 .profil-bg {
   background-image: url(../images/bg-profil.jpeg);
   background-position: center;
@@ -181,30 +194,15 @@ main {
   background-repeat: no-repeat;
 }
 
-.about-bg {
+.about-bg, .info-bg {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.contact-bg, .competence-bg {
-  background-color: #23264B;
-}
-
-.navbar {
-  box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
-}
-
+/*SKILLS*/
 .skill-group {
   background-color: #fff;
   padding: 1rem 1rem;
   margin-bottom: 2rem;
-}
-
-.project-bg {
-  background-color: #fff;
-}
-
-.project-title {
-  border: 0.1rem solid #23264B;
 }
 
 .langage-list {
@@ -215,13 +213,18 @@ main {
   border: #fff !important;
 }
 
+/*PROJECT*/
+.project-bg {
+  background-color: #fff;
+}
+
+.project-title {
+  border: 0.1rem solid #23264B;
+}
+
 .project-image {
   border-bottom: 0.1rem solid #23264B;
   border-top: 0.1rem solid #23264B;
-}
-
-.profil-text {
-  border-left: 0.2rem solid #E6BFD1;
 }
 
 .project-skill-box {
@@ -229,6 +232,7 @@ main {
   padding-bottom: 1rem;
 }
 
+/*Carousel*/
 .carousel {
   position: relative;
   overflow: hidden;
@@ -288,6 +292,7 @@ main {
   opacity: 0;
 }
 
+/*overlay carousel*/
 .overlay-image {
   position: relative;
 }
@@ -326,15 +331,32 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.nav-bg {
-  background-color: #E6BFD1;
+/*CONTACT*/
+.contact-bg {
+  background-color: #23264B;
 }
 
+/******HEADER******/
+/*PICTURE*/
+.profil-picture {
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+}
+
+.profil-text {
+  border-left: 0.2rem solid #E6BFD1;
+}
+
+/*TITLE*/
 .main-title-bg {
   background-color: #E6BFD1;
 }
 
-.profil-picture {
-  border-radius: 50%;
+/*NAV*/
+.navbar {
   box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+}
+
+.nav-bg {
+  background-color: #E6BFD1;
 }

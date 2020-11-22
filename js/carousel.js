@@ -1,6 +1,6 @@
 // Asynchronous script : add eventlistener
 
-console.log('coucou');
+console.log('carousel script');
 
 
 class Carousel {

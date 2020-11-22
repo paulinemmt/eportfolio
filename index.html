@@ -9,6 +9,16 @@
     <meta name="description"
         content="Pauline Momot, développeuse web junior à la recherche d'un emploi dès maintenant !">
     <meta name="viewport" content="width=device-width">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTS40BJ59B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTS40BJ59B');
+</script>
     <!-- Style tags -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -22,6 +32,7 @@
     <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
     <!-- JS script -->
     <script type="text/javascript" src='./js/carousel.js'></script>
+    <script type="text/javascript" src='./js/index.js' async></script>
 </head>
 
 <body>
@@ -57,13 +68,15 @@
         <!-- PROFIL -->
         <section id="profil" class="row w-100 mx-auto py-5 profil-bg">
             <div class="row d-flex flex-column align-items-center justify-content-center mx-auto mb-5">
-                <aside class="my-4 text-center d-flex align-items-center">
+                <aside class="my-4 ">
+                    <div class="text-center d-flex align-items-center p-2 info-bg">
                     <p class="m-auto font-weight-bold"><i
                             class="fas fa-map-marker-alt mr-2 logo-localisation"></i>Bas-Rhin
                         (67)</p>
                     <p class="m-auto font-weight-bold"><a href="assets/images/pauline_momot_cv.pdf" target="blank"
                             class="ml-4 font-weight-bold cv-link"><i
                                 class="fas fa-download mr-2 logo-cv"></i>Mon CV</a></p>
+                            </div>
                 </aside>
                 <div class="w-75 p-3 mt-5 about-bg">
                     <p class="w-100 pl-2 mb-0 font-italic profil-text">"Aujourd'hui diplômée Développeuse web, j'ai
@@ -85,7 +98,7 @@
         <!-- SKILLS -->
         <section id="competences" class="row m-0 p-4 d-flex flex-column">
             <h2 class="w-100 ml-0 pt-5 pb-2 text-center subtitle-main">Mes compétences</h2>
-            <h3 class="w-100 ml-0 pt-2 pb-5 text-center resume-main">Un aperçu des langages de programmation et autres technologies que j'ai pu manipulé.</h3>
+            <h3 class="w-100 ml-0 pt-2 pb-5 text-center resume-main typedtext">Un aperçu des langages de programmation et autres technologies que j'ai pu manipulé.</h3>
             <div id="langage-competence" class="d-flex flex-row text-center justify-content-around flex-wrap">
 
                 <!-- FRONTEND -->
@@ -346,7 +359,7 @@
         <section id="realisations" class="">
 
             <h2 class="w-100 ml-0 pt-4 pb-2 text-center subtitle-main">Mon portfolio</h2>
-            <h3 class="w-100 ml-0 pt-2 pb-3 text-center resume-main">Les projets que j'ai mené.</h3>
+            <h3 id="portfolio-subtitle" class="w-100 ml-0 pt-2 pb-3 text-center resume-main">Les projets que j'ai mené.</h3>
           
 
             <div id="carousel1" class="total-carousel mb-4">
@@ -378,8 +391,6 @@
                                 CSS.<br />
                                 <i class="fas fa-caret-right logo-project-skill"></i> Implémentation d'une interface
                                 responsive en CSS.<br />
-                                <i class="fas fa-caret-right logo-project-skill"></i> Utilisation d'un système de
-                                gestion de version (git) et son hébergement (Github).<br />
                                 <i class="fas fa-caret-right logo-project-skill"></i> Respect de la conformité HTML et
                                 CSS aux normes du W3C.
                             </p>
@@ -413,7 +424,6 @@
                                 d'effets CSS graphiques avancés sur une page web à partir d'une maquette.<br />
                                 <i class="fas fa-caret-right logo-project-skill"></i> Mise en place d'une structure de
                                 navigation.<br />
-                                <i class="fas fa-caret-right logo-project-skill"></i> Utilisation de Sass.<br />
                                 <i class="fas fa-caret-right logo-project-skill"></i> Respect de la conformité HTML et
                                 CSS
                                 aux normes du W3C.
@@ -447,7 +457,7 @@
                             </div>
                             <p class="col-md-10 px-2 my-auto"><i class="fas fa-caret-right logo-project-skill"></i>
                                 Production de
-                                code HTML et CSS maintenable.<br />
+                                code maintenable.<br />
                                 <i class="fas fa-caret-right logo-project-skill"></i> Optimisation de l'accessibilité
                                 (standard WCAG) d'un site web.<br />
                                 <i class="fas fa-caret-right logo-project-skill"></i> Optimisation de la vitesse et de
@@ -600,8 +610,9 @@
                         class="fab fa-github-square"></i></a>
             </div>
             <!-- Faire un formulaire pour envoit direct sur l'adresse mail -->
+            
         </section>
-
+        <div id="typedtext"></div>
     </main>
 
     <footer class="container-fluid p-0 pb-5">
@@ -609,11 +620,6 @@
             <p class="pb-3 mb-0 contact-bg"><i class="far fa-copyright"></i> Pauline Momot - 2020</p>
         </div>
     </footer>
-
-    <!-- JS script -->
-   
-    
-
 
 </body>
 
