@@ -4,7 +4,7 @@
 
 /*PROFIL*/
 .profil-bg{
-    background-image: url(../images/bg-profil.jpeg);
+    background: url(../images/bg-profil.jpeg);
     background-position: center;
     color: #fff;
     background-attachment:fixed;
@@ -36,10 +36,10 @@
 .project-title{
     border: 0.1rem solid $primary-color;
 }
-.project-image{
-    border-bottom: 0.1rem solid $primary-color;
-   border-top: 0.1rem solid $primary-color;
-    }
+// .project-image{
+    // border-bottom: 0.1rem solid $primary-color;
+//    border-top: 0.1rem solid $primary-color;
+    // }
 .project-skill-box{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -66,7 +66,6 @@
 }
 .carousel-box{
     box-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
-    border: 0.1rem solid $primary-color;
     width:90%;
 }
 .carousel__next, .carousel__prev{

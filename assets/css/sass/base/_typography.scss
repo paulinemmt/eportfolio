@@ -11,18 +11,15 @@
 
 /*Nav*/
 .nav-bg a{
+    font-size: 1.2rem;
     font-family: 'Roboto', sans-serif, Arial;
     color: $primary-color;
-    font-weight: bold;
-    border: 0.1rem solid $secondary-color;
-    transition : border 500ms, text-shadow 500ms;
-    padding-bottom: 0;
-    padding-top: 0;
-    text-shadow: 0.2rem 0.2rem 0.8rem $secondary-color;
+    border-top: 0.2rem solid $secondary-color;
+    transition : border-top 500ms, font-weight 500ms;
     &:hover{
         color: $primary-color;
-        text-decoration: underline;
-        text-shadow: 0.2rem 0.2rem 0.8rem $primary-color;
+        border-top : 0.2rem solid $primary-color;
+        font-weight: bold;
     }
 }
 .navbar-toggler-icon{

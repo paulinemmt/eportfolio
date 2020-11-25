@@ -1,4 +1,8 @@
 /*Couleur fond*/
+html {
+  scroll-behavior: smooth;
+}
+
 /*****TYPOGRAPHY*****/
 /*HEADER*/
 /*Main title*/
@@ -9,20 +13,17 @@
 
 /*Nav*/
 .nav-bg a {
+  font-size: 1.2rem;
   font-family: 'Roboto', sans-serif, Arial;
   color: #23264B;
-  font-weight: bold;
-  border: 0.1rem solid #E6BFD1;
-  transition: border 500ms, text-shadow 500ms;
-  padding-bottom: 0;
-  padding-top: 0;
-  text-shadow: 0.2rem 0.2rem 0.8rem #E6BFD1;
+  border-top: 0.2rem solid #E6BFD1;
+  transition: border-top 500ms, font-weight 500ms;
 }
 
 .nav-bg a:hover {
   color: #23264B;
-  text-decoration: underline;
-  text-shadow: 0.2rem 0.2rem 0.8rem #23264B;
+  border-top: 0.2rem solid #23264B;
+  font-weight: bold;
 }
 
 .navbar-toggler-icon {
@@ -187,7 +188,7 @@ main {
 /*GENERAL*/
 /*PROFIL*/
 .profil-bg {
-  background-image: url(../images/bg-profil.jpeg);
+  background: url(../images/bg-profil.jpeg);
   background-position: center;
   color: #fff;
   background-attachment: fixed;
@@ -222,11 +223,6 @@ main {
   border: 0.1rem solid #23264B;
 }
 
-.project-image {
-  border-bottom: 0.1rem solid #23264B;
-  border-top: 0.1rem solid #23264B;
-}
-
 .project-skill-box {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -257,7 +253,6 @@ main {
 
 .carousel-box {
   box-shadow: 0.2rem 0.2rem 0.8rem #23264B;
-  border: 0.1rem solid #23264B;
   width: 90%;
 }
 
